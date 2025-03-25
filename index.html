@@ -124,22 +124,9 @@
     </section>
   </main>
   
-  <script>
-    const API_KEY = "sk_7a9cJXh8LQmN3vP2Zy5RtKdWgVBf0A1";
-    const PLUGIN_URL = "https://163.43.224.214/accessibility-plugin";
 
-    fetch(PLUGIN_URL, {
-        method: "GET",
-        headers: { "x-api-key": API_KEY }
-    })
-    .then(response => response.text())
-    .then(pluginContent => {
-        const script = document.createElement("script");
-        script.innerHTML = pluginContent;
-        document.head.appendChild(script);
-    })
-    .catch(error => console.error("Error loading plugin:", error));
-  </script>
+  <script src="https://roaring-gingersnap-106db5.netlify.app/accessibility-plugin.min.js"></script>
+
 
 
 
